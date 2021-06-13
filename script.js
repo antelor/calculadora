@@ -22,6 +22,7 @@ function operate (op, a, b){
 }
 
 function screenUpdate (){
+    screenValue = Math.round(screenValue * 100) / 100
     screen.textContent = screenValue;
 }
 
@@ -36,7 +37,6 @@ function opBtnClick(e){
     currentOperator = e.target.textContent;
 
     if ( (currentOperator=='*'||currentOperator=='/') && screenValue==0 ) {
-        console.log('b');
         screenValue = operate( currentOperator, oldValue, 1);
     }
     else if ( (currentOperator=='*'||currentOperator=='/') && oldValue==0 ) {
