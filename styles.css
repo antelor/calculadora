@@ -32,8 +32,12 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-button{
+.btn{
     padding:1em;
     margin: 0.2em;
     font-size:30px;
+}
+
+.clearBtn{
+    background-color: maroon;
 }
