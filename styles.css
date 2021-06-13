@@ -7,3 +7,33 @@
 ::after{
     box-sizing: inherit;
 }
+
+.calc{
+    margin: auto;
+    width:30%;
+    padding: 1em;
+    background-color: gray;
+    
+}
+
+.pantalla{
+    grid-column: 1 /5;
+    background-color: lightgray;
+    text-align: right;
+    padding:20px;
+    width:80%;
+
+    margin: 0.5em auto;
+    font-size: 30px;
+}
+
+.botones{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+button{
+    padding:1em;
+    margin: 0.2em;
+    font-size:30px;
+}
